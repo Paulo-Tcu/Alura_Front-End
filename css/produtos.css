@@ -1,0 +1,27 @@
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+.caixa {
+    width: auto;
+    position: relative;
+    margin: 0 20% auto 20%;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0px;
+}
+nav li {
+    display: inline; /* Colocando elementos em linha do tamanho do atributo*/
+    margin: 0 0 0 15px; /* Adicionado espaço entre as margens => topo, direita, baixo e esquerda*/
+
+}
+nav a {
+    text-transform: uppercase; /* Transformando texto em maiusculo*/ 
+    color: black;
+    font-weight: bold; /*Em negrito*/
+    font-size: 22px;
+    text-decoration: none; /*Retirando o sublinhado*/
+
+}
