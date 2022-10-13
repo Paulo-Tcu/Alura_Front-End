@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Contato</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1>
+                    <img src="../img/logo.png" alt="Logo Barbearia Alura">
+                </h1>
+                <nav> <!-- Nav de navegação -->
+                    <ul> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <label for="nomesobrenome_pagecontato">Nome e sobrenome</label>
+                <input class="input_padrao" type="text" id="nomesobrenome_pagecontato" required>
+
+                <label for="email_pagecontato">Email</label>
+                <input class="input_padrao" type="email" id="email_pagecontato" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone_pagecontato">Telefone</label>
+                <input class="input_padrao" type="tel" id="telefone_pagecontato" required placeholder="(XX) XXXXX-XXXX ">
+
+                <label for="mensagem_pagecontato">Mensagem</label>
+                <textarea class="input_padrao" cols="68" rows="10" id="mensagem_pagecontato"></textarea required>
+                
+                <fieldset> <!-- Utiliza-se para formulários -->
+                    <legend>Como prefere nosso contato ?</p>
+                    <label for="radio_email_pagecontato">
+                        <input type="radio" name="tipo_contato" value="email" id="radio_email_pagecontato">    
+                        Email
+                    </label>
+
+                    <label for="radio_telefone_pagecontato">
+                        <input type="radio" name="tipo_contato" value="telefone" id="radio_telefone_pagecontato">
+                        Telefone
+                    </label>
+                    
+
+                    <label for="radio_whatsapp_pagecontato">
+                        <input type="radio" name="tipo_contato" value="whatsapp" id="radio_whatsapp_pagecontato" checked>
+                        Whatsapp
+                    </label>
+                    
+                    
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido ?</p>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidade por email ?</label>
+                
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+
+            <!-- tr => linha; td => coluna -->
+            <table>
+                <thead> <!-- Cabeçalho -->
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td> <!-- cospan = "x" cospan é utilizado para agrupar colunas, onde x é numero de colunas -->
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </main>
+
+        <footer> <!-- Rodapé -->
+            <img src="../img/logo-branco.png" alt="Logo da Barbearia Alura">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p> <!-- Criando Copyright -->
+        </footer>
+    </body>
+</html>
