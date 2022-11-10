@@ -3,52 +3,89 @@
     <head>
         <meta charset="UTF-8">
         <title>Barbearia Alura</title>
-        <link rel="stylesheet" href="../css/style-home.css"> <!-- Referência e nome -->     
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css"> <!-- Referência e nome -->   
+        <!-- css de font web - google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <h1 class="titulo-principal">Barbearia Alura</h1>
+            <div class="caixa">
+                <h1>
+                    <img src="../img/logo.png">
+                </h1>
+                <nav> <!-- Nav de navegação -->
+                    <ul> 
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <!-- src de source -->
-        <img id="banner"  src="../img/banner.jpg">
-        <div class="principal">
+        <img class="banner"  src="../img/banner.jpg">
+
+        <main>
+            <section class="principal">
+              <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+
+              <img class="utensilios" src="../img/utensilios.jpg" alt="Utensilios de um barbeiro" >
+                <!-- strong para deixar em negrito -->
+                <p>Localizada no coração da cidade a <strong> Barbearia Alura</strong> 
+                    traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.
+                </p>
+
+                <p id="missao"><em> Nossa missão é:<strong> "Proporcionar auto-estima e qualidade de vida aos clientes".</strong></em></p>
+
+                <p> profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e 
+                    satisfação dos nossos clientes.
+                </p>
+                
+            </section>
             
-            
-            <h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>
-            <p>
-                Localizada no coração da cidade a 
-                <strong> <!-- strong para deixar em negrito -->
-                    Barbearia Alura
-                </strong> 
-                traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.
-            </p>
-            <p id="missao">
-                <em> <!-- em para deixar o texto em italico -->
-                    Nossa missão é:
-                    <strong> 
-                        "Proporcionar auto-estima e qualidade de vida aos clientes".
-                    </strong>
-                </em>
-            </p>
-            <p> profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e 
-                satisfação dos nossos clientes.
-            </p>
-            
-        </div>
-        <div class="beneficios">
-            <h3 class="titulo-centralizado"> Benefícios</h3>
-            <!-- ul para começar uma lista não ordenada e ol para uma lista ordenada -->
-            <ul>
-                <em>
-                    <strong>
-                        <li class="itens">Atendimento aos Clientes</li>
-                        <li class="itens">Espaço Diferenciado</li>
-                        <li class="itens">Profissionais Qualificados</li>
-                    </strong>
-                </em>
-            </ul>
-            <img class="imagemBeneficios" src="../img/beneficios.jpg">
-        </div>
+            <section class="mapa">
+                <h3 class="titulo-principal">Nosso estabelecimento</h3>
+                <p>Nosso estabelecimento está localizado no coração da cidade.</p>
+    
+                <!-- Incorparação do google maps -->
+                <div class="mapa-conteudo">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8853.538787777818!2d-48.68067587700458!3d-21.094438179995695!2m3!1f0!2f0!3f0!3m2!1i1024!2i76
+                        8!4f13.1!3m3!1m2!1s0x94b95592f4b0dd91%3A0xa0518c233cb32d9d!2sPirangi%2C%20SP%2C%2015820-000!5e0!3m2!1spt-BR!2sbr!4v1668043627483!5m2!1spt-BR!2sbr" width="100%" 
+                        height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+            <section class="beneficios">
+                <h3 class="titulo-principal"> Benefícios</h3>
+                <!-- ul para começar uma lista não ordenada e ol para uma lista ordenada -->
+                <div class="conteudo-beneficios">
+                    <ul class="lista-beneficios">
+                        <em>
+                            <strong>
+                                <li class="itens">Atendimento aos Clientes</li>
+                                <li class="itens">Espaço Diferenciado</li>
+                                <li class="itens">Profissionais Qualificados</li>
+                                <li class="itens">Pontualidade</li>
+                                <li class="itens">Limpeza</li>
+                            </strong>
+                        </em>
+                    </ul><img class="imagem-Beneficios" src="../img/beneficios.jpg">
+                </div>
+
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
+
+        <footer> <!-- Rodapé -->
+            <img src="../img/logo-branco.png">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p> <!-- Criando Copyright -->
+        </footer>
     </body>
 
 </html>
